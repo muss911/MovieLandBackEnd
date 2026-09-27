@@ -1,0 +1,60 @@
+CREATE TABLE [dbo].[Movie](
+	 [movieId] INT IDENTITY(1,1) PRIMARY KEY,
+	[active] [bit] NOT NULL,
+	[cast] [varchar](255) NULL,
+	[director] [varchar](255) NULL,
+	[photoUrl] [varchar](255) NULL,
+	[plot] [varchar](255) NULL,
+	[title] [varchar](255) NULL,
+	[vote] [int]  NULL
+	)
+
+	INSERT INTO Movie (title, vote, [cast], plot, director, photoUrl, active)
+VALUES
+('Inception', 9, 'Leonardo DiCaprio, Joseph Gordon-Levitt, Tom Hardy',
+ 'Un ladro entra nei sogni delle persone per rubare informazioni.',
+ 'Christopher Nolan',
+ 'https://example.com/inception.jpg',
+ 1),
+
+('The Dark Knight', 9, 'Christian Bale, Heath Ledger, Gary Oldman',
+ 'Batman affronta il Joker, un criminale che vuole gettare Gotham nel caos.',
+ 'Christopher Nolan',
+ 'https://example.com/dark-knight.jpg',
+ 1),
+
+('Interstellar', 10, 'Matthew McConaughey, Anne Hathaway, Jessica Chastain',
+ 'Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di un nuovo pianeta abitabile.',
+ 'Christopher Nolan',
+ 'https://example.com/interstellar.jpg',
+ 1),
+
+('Titanic', 8, 'Leonardo DiCaprio, Kate Winslet, Billy Zane',
+ 'Una storia d''amore tra due giovani a bordo del Titanic.',
+ 'James Cameron',
+ 'https://example.com/titanic.jpg',
+ 1),
+
+('The Matrix', 9, 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss',
+ 'Un uomo scopre che la realtà che conosce è una simulazione.',
+ 'Lana Wachowski, Lilly Wachowski',
+ 'https://example.com/matrix.jpg',
+ 1),
+
+('The Godfather', 10, 'Marlon Brando, Al Pacino, James Caan',
+ 'La storia della famiglia mafiosa Corleone e delle sue lotte per il potere.',
+ 'Francis Ford Coppola',
+ 'https://example.com/godfather.jpg',
+ 1),
+
+('Avatar', 8, 'Sam Worthington, Zoe Saldana, Sigourney Weaver',
+ 'Un ex marine viene coinvolto nel conflitto tra gli abitanti di Pandora e gli esseri umani.',
+ 'James Cameron',
+ 'https://example.com/avatar.jpg',
+ '1'),
+
+('Gladiator', 9, 'Russell Crowe, Joaquin Phoenix, Connie Nielsen',
+ 'Un generale romano cerca vendetta dopo essere stato tradito dall''imperatore.',
+ 'Ridley Scott',
+ 'https://example.com/gladiator.jpg',
+ 1);
